@@ -1,6 +1,7 @@
 import React from "react";
 import "./Products.css";
 import { AiFillStar } from "react-icons/ai";
+import { IoBagHandleOutline } from "react-icons/io5";
 
 const Products = () => {
   return (
@@ -10,17 +11,26 @@ const Products = () => {
           <img
             src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
             alt="Shoe"
+            className="card-img"
           />
           <div className="card-details">
             <h3 className="card-title">Shoe</h3>
-            <div className="card-reviews">
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
+            <section className="card-reviews">
+              <AiFillStar className="ratings-star" />
+              <AiFillStar className="ratings-star" />
+              <AiFillStar className="ratings-star" />
+              <AiFillStar className="ratings-star" />
+              <AiFillStar className="ratings-star" />
               <span className="totla-reviews">5</span>
-            </div>
+            </section>
+            <section className="card-price">
+              <div className="price">
+                <del>$500</del>$200
+              </div>
+              <div className="bag">
+                <IoBagHandleOutline className="bag-icon" />
+              </div>
+            </section>
           </div>
         </section>
       </section>
